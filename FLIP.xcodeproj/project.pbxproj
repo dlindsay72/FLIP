@@ -14,6 +14,8 @@
 		7B76AEB51DA5C1F00058257C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B76AEB31DA5C1F00058257C /* Main.storyboard */; };
 		7B76AEB71DA5C1F00058257C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B76AEB61DA5C1F00058257C /* Assets.xcassets */; };
 		7B76AEBA1DA5C1F00058257C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B76AEB81DA5C1F00058257C /* LaunchScreen.storyboard */; };
+		7B7C2DF51DA5C5F700BB51EF /* StoneColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7C2DF41DA5C5F700BB51EF /* StoneColor.swift */; };
+		7B7C2DF71DA5C63A00BB51EF /* Stone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7C2DF61DA5C63A00BB51EF /* Stone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7B76AEB61DA5C1F00058257C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B76AEB91DA5C1F00058257C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B76AEBB1DA5C1F00058257C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B7C2DF41DA5C5F700BB51EF /* StoneColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoneColor.swift; sourceTree = "<group>"; };
+		7B7C2DF61DA5C63A00BB51EF /* Stone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,42 @@
 		7B76AEA81DA5C1F00058257C /* FLIP */ = {
 			isa = PBXGroup;
 			children = (
+				7B7C2DFA1DA5C66300BB51EF /* Model */,
+				7B7C2DF91DA5C65900BB51EF /* View */,
+				7B7C2DF81DA5C65100BB51EF /* Controller */,
 				7B76AEA91DA5C1F00058257C /* AppDelegate.swift */,
 				7B76AEAB1DA5C1F00058257C /* GameScene.sks */,
-				7B76AEAF1DA5C1F00058257C /* GameScene.swift */,
-				7B76AEB11DA5C1F00058257C /* GameViewController.swift */,
 				7B76AEB31DA5C1F00058257C /* Main.storyboard */,
 				7B76AEB61DA5C1F00058257C /* Assets.xcassets */,
 				7B76AEB81DA5C1F00058257C /* LaunchScreen.storyboard */,
 				7B76AEBB1DA5C1F00058257C /* Info.plist */,
 			);
 			path = FLIP;
+			sourceTree = "<group>";
+		};
+		7B7C2DF81DA5C65100BB51EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B76AEB11DA5C1F00058257C /* GameViewController.swift */,
+				7B76AEAF1DA5C1F00058257C /* GameScene.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B7C2DF91DA5C65900BB51EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B7C2DF41DA5C5F700BB51EF /* StoneColor.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7B7C2DFA1DA5C66300BB51EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B7C2DF61DA5C63A00BB51EF /* Stone.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7C2DF71DA5C63A00BB51EF /* Stone.swift in Sources */,
 				7B76AEB01DA5C1F00058257C /* GameScene.swift in Sources */,
 				7B76AEB21DA5C1F00058257C /* GameViewController.swift in Sources */,
 				7B76AEAA1DA5C1F00058257C /* AppDelegate.swift in Sources */,
+				7B7C2DF51DA5C5F700BB51EF /* StoneColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
