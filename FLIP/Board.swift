@@ -58,4 +58,69 @@ class Board: NSObject {
         
         return true
     }
+    
+    func makeMove(player: Player, row: Int, col: Int) -> [Move] {
+        var didCapture = [Move]()
+        
+        rows[row][col] = player.stoneColor
+        
+        didCapture.append(Move(row: row, col: col))
+        
+        for move in Board.moves {
+            var mightCapture = [Move]()
+            var currentRow = row
+            var currentCol = col
+            
+            for _ in 0..<Board.size {
+                currentRow += move.row
+                currentCol += move.col
+                
+                guard isInBounds(row: currentRow, col: currentCol) else { break }
+                
+                let stone = rows[currentRow][currentCol]
+                
+                if stone == player.opponoent.stoneColor {
+                    
+                    mightCapture.append(Move(row: currentRow, col: currentCol))
+                } else if stone == player.stoneColor {
+                    
+                    didCapture.append(contentsOf: mightCapture)
+                    
+                    mightCapture.forEach {
+                        rows[$0.row][$0.col] = player.stoneColor
+                    }
+                    
+                    break
+                } else {
+                    
+                    break
+                }
+            }
+        }
+        return didCapture
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
