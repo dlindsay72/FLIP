@@ -16,6 +16,9 @@
 		7B76AEBA1DA5C1F00058257C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B76AEB81DA5C1F00058257C /* LaunchScreen.storyboard */; };
 		7B7C2DF51DA5C5F700BB51EF /* StoneColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7C2DF41DA5C5F700BB51EF /* StoneColor.swift */; };
 		7B7C2DF71DA5C63A00BB51EF /* Stone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7C2DF61DA5C63A00BB51EF /* Stone.swift */; };
+		7B7C2DFC1DA5CB4600BB51EF /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7C2DFB1DA5CB4600BB51EF /* Board.swift */; };
+		7B7C2DFE1DA5CD0500BB51EF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7C2DFD1DA5CD0400BB51EF /* Player.swift */; };
+		7B8422D81DA6C32A004237EF /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8422D71DA6C32A004237EF /* Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		7B76AEBB1DA5C1F00058257C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B7C2DF41DA5C5F700BB51EF /* StoneColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoneColor.swift; sourceTree = "<group>"; };
 		7B7C2DF61DA5C63A00BB51EF /* Stone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stone.swift; sourceTree = "<group>"; };
+		7B7C2DFB1DA5CB4600BB51EF /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		7B7C2DFD1DA5CD0400BB51EF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		7B8422D71DA6C32A004237EF /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				7B7C2DF61DA5C63A00BB51EF /* Stone.swift */,
+				7B7C2DFB1DA5CB4600BB51EF /* Board.swift */,
+				7B7C2DFD1DA5CD0400BB51EF /* Player.swift */,
+				7B8422D71DA6C32A004237EF /* Move.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -176,7 +185,10 @@
 			files = (
 				7B7C2DF71DA5C63A00BB51EF /* Stone.swift in Sources */,
 				7B76AEB01DA5C1F00058257C /* GameScene.swift in Sources */,
+				7B7C2DFC1DA5CB4600BB51EF /* Board.swift in Sources */,
 				7B76AEB21DA5C1F00058257C /* GameViewController.swift in Sources */,
+				7B8422D81DA6C32A004237EF /* Move.swift in Sources */,
+				7B7C2DFE1DA5CD0500BB51EF /* Player.swift in Sources */,
 				7B76AEAA1DA5C1F00058257C /* AppDelegate.swift in Sources */,
 				7B7C2DF51DA5C5F700BB51EF /* StoneColor.swift in Sources */,
 			);
